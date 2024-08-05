@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    container_name: jupyter
+    build: ./docker/jupyter
+    ports:
+      - "8888:8888"
+    tty: true
+    volumes:
+      - ./data/jupyter/work:/home/jovyan/work
+      - ./config:/home/jovyan/.jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=${JUPYTER_PASS}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "1"
