@@ -35,7 +35,9 @@
                 "pylsp.plugins.flake8.filename": null,
                 "pylsp.plugins.flake8.hangClosing": null,
                 "pylsp.plugins.flake8.ignore": [
-                    "E402"
+                    "E402",
+                    "E203",
+                    "E302"
                 ],
                 "pylsp.plugins.flake8.maxLineLength": null,
                 "pylsp.plugins.flake8.indentSize": null,
@@ -72,7 +74,9 @@
                 "pylsp.plugins.pycodestyle.exclude": [],
                 "pylsp.plugins.pycodestyle.filename": [],
                 "pylsp.plugins.pycodestyle.select": [],
-                "pylsp.plugins.pycodestyle.ignore": [],
+                "pylsp.plugins.pycodestyle.ignore": [
+                    "E402"
+                ],
                 "pylsp.plugins.pycodestyle.hangClosing": null,
                 "pylsp.plugins.pycodestyle.maxLineLength": null,
                 "pylsp.plugins.pycodestyle.indentSize": null,

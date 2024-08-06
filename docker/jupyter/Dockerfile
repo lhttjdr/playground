@@ -6,6 +6,9 @@ RUN pip install ipywidgets \
     "python-lsp-server[all]" \
     black \
     ruff \
+    pylsp-mypy \
+    python-lsp-isort \
+    python-lsp-black \
     python-lsp-ruff \
     jupyterlab-code-formatter
 
