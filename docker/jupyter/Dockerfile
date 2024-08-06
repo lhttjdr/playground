@@ -3,7 +3,11 @@ FROM almondsh/almond:0.14.0-RC15-scala-3.3.3
 
 RUN pip install ipywidgets \
     jupyterlab-lsp \
-    "python-lsp-server[all]"
+    "python-lsp-server[all]" \
+    black \
+    ruff \
+    python-lsp-ruff \
+    jupyterlab-code-formatter
 
 RUN pip install langchain \
     langchain_core \

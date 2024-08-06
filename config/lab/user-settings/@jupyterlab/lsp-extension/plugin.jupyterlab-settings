@@ -10,7 +10,14 @@
 
     // Language Server
     // Language-server specific configuration, keyed by implementation
-    "languageServers": {},
+    "languageServers": {
+        "pylsp": {
+            "rank": 50,
+            "configuration": {
+                "pylsp.plugins.ruff.enabled": true
+            }
+        }
+    },
 
     // Log communication
     // Enable or disable the logging feature of the language servers.
